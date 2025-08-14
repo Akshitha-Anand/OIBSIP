@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GreenFarm AI — Smart Agroforestry Companion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green-1: #f3fbf4;
+      --accent: #3a8d52;
+      --accent-2: #2f6f41;
+      --muted: #6b7376;
+      --card: #ffffff;
+      font-family: 'Inter', sans-serif;
+    }
+    body{margin:0;background:linear-gradient(180deg,var(--green-1), #ffffff 40%);color:#0a2a12}
+    header,footer{max-width:1200px;margin:0 auto;padding:20px;display:flex;justify-content:space-between;align-items:center}
+    .brand{display:flex;gap:10px;align-items:center}
+    .logo{width:50px;height:50px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:white;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:18px}
+    nav a{color:var(--accent-2);text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600}
+    nav a:hover{background:rgba(0,0,0,0.05)}
+    .cta{background:var(--accent);color:white}
+    .container{max-width:1200px;margin:auto;padding:0 20px}
+    .hero{display:grid;grid-template-columns:1fr 400px;gap:20px;align-items:center;margin-top:20px}
+    .hero-card{background:var(--card);padding:24px;border-radius:14px;box-shadow:0 4px 18px rgba(0,0,0,0.05)}
+    h1{color:var(--accent-2)}
+    p.lead{color:var(--muted);line-height:1.5}
+    .stats{display:flex;gap:8px;margin-top:16px}
+    .stat{background:rgba(47,79,56,0.05);padding:8px 12px;border-radius:8px;color:var(--accent-2)}
+    .login-panel{background:var(--card);padding:20px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.05)}
+    .form-row{display:flex;flex-direction:column;gap:5px;margin-bottom:10px}
+    input{padding:10px;border:1px solid #cde0d1;border-radius:6px}
+    button{cursor:pointer;border:none}
+    button.primary{background:var(--accent);color:white;padding:10px;border-radius:8px;font-weight:600}
+    button.ghost{background:transparent;border:1px solid var(--accent);color:var(--accent);padding:8px;border-radius:8px}
+    section.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:20px}
+    .card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.05)}
+    .card h4{color:var(--accent-2);margin-bottom:6px}
+    .map-section{margin-top:30px;text-align:center}
+    iframe{border:0;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.1)}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">GF</div>
+      <div>
+        <strong>GreenFarm AI</strong><div style="font-size:12px;color:var(--muted)">Smart Agroforestry Companion</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#impact">Impact</a>
+      <a class="cta" id="loginBtn">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <div class="hero-card">
+        <h1>GreenFarm AI — Planting a Sustainable Future</h1>
+        <p class="lead">From AI-driven tree selection to AR plantation simulation, GreenFarm AI empowers communities to farm smarter and greener.</p>
+        <div class="stats">
+          <div class="stat">🌱 AI Tree Selection</div>
+          <div class="stat">📍 AR Mapping</div>
+          <div class="stat">💨 Carbon Rewards</div>
+        </div>
+      </div>
+      <div class="login-panel">
+        <h3>Sign In</h3>
+        <div class="form-row">
+          <label>Email</label>
+          <input type="text" placeholder="you@example.com">
+        </div>
+        <div class="form-row">
+          <label>Password</label>
+          <input type="password" placeholder="••••••">
+        </div>
+        <button class="primary" style="width:100%">Login</button>
+      </div>
+    </div>
+
+    <section id="features" class="grid">
+      <div class="card">
+        <h4>AI-Based Tree Selection</h4>
+        <p class="muted">Personalized recommendations based on soil and climate.</p>
+      </div>
+      <div class="card">
+        <h4>Geo-Mapping & AR Guidance</h4>
+        <p class="muted">Visualize plantation spots with augmented reality.</p>
+      </div>
+      <div class="card">
+        <h4>Carbon Credit Integration</h4>
+        <p class="muted">Earn rewards for verified carbon sequestration.</p>
+      </div>
+      <div class="card">
+        <h4>Smart Growth Tracking</h4>
+        <p class="muted">Monitor health and yield with real-time analytics.</p>
+      </div>
+    </section>
+
+    <section id="impact" class="grid">
+      <div class="card">
+        <h4>Increase Biodiversity</h4>
+        <p class="muted">Boost ecological balance with diverse planting.</p>
+      </div>
+      <div class="card">
+        <h4>Soil Improvement</h4>
+        <p class="muted">Enrich soil quality naturally through sustainable methods.</p>
+      </div>
+      <div class="card">
+        <h4>Climate Mitigation</h4>
+        <p class="muted">Capture carbon and fight climate change.</p>
+      </div>
+    </section>
+
+    <div class="map-section">
+      <h3 style="color:var(--accent-2);margin-bottom:10px">Our Global Impact Map</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345090735!2d144.95373531531673!3d-37.816279742014404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f0f8ab%3A0xf577e1a0b43f7f!2sGlobal%20Forest!5e0!3m2!1sen!2sus!4v1616628059185!5m2!1sen!2sus" width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </main>
+
+  <footer>
+    <div>© 2025 GreenFarm AI</div>
+  </footer>
+</body>
+</html>
